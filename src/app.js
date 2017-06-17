@@ -7,20 +7,20 @@ $(document).ready(function() {
      $('.summernote').html(existingValue);
 
      $('.summernote').summernote({
-          height: 300,                 // set editor height
-            minHeight: null,             // set minimum height of editor
-            maxHeight: null,             // set maximum height of editor
-            focus: true,
-       toolbar: [
-         // [groupName, [list of button]]
-         ['style', ['bold', 'italic', 'underline', 'clear']],
-         ['font', ['strikethrough']],
-         ['fontsize', ['fontsize']],
-         ['insert',['picture', 'link']],
-         ['color', ['color']],
-         ['para', ['ul', 'ol', 'paragraph', 'style']],
-         ['height', ['height']],
-         ['code',['codeview']]
+          height: 300, // set editor height
+          minHeight: null, // set minimum height of editor
+          maxHeight: null, // set maximum height of editor
+          focus: true,
+          toolbar: [
+               ['style', ['bold', 'italic', 'underline', 'clear']],
+               ['font', ['strikethrough']],
+               ['fontsize', ['fontsize']],
+               ['insert',['picture', 'link']],
+               ['color', ['color']],
+               ['para', ['ul', 'ol', 'paragraph', 'style']],
+               ['height', ['height']],
+               ['code',['codeview']]
+          ],
     ],
     callbacks: {
       onInit: function() {

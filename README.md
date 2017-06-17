@@ -25,6 +25,30 @@ gulp watch
 
 The [same constraints](../README.md#debugging-on-your-local-environment) apply to loading unsafe scripts.
 
+## Change the WYSIWYG Settings
+You can change the settings of the WYSIWYG for what gets included in the toolbar. The options are available here: http://summernote.org/deep-dive/
+
+The default settings are in /src/app.js as below:
+
+```javascript
+$('.summernote').summernote({
+     height: 300, // set editor height
+     minHeight: null, // set minimum height of editor
+     maxHeight: null, // set maximum height of editor
+     focus: true,
+     toolbar: [
+          ['style', ['bold', 'italic', 'underline', 'clear']],
+          ['font', ['strikethrough']],
+          ['fontsize', ['fontsize']],
+          ['insert',['picture', 'link']],
+          ['color', ['color']],
+          ['para', ['ul', 'ol', 'paragraph', 'style']],
+          ['height', ['height']],
+          ['code',['codeview']]
+     ],
+```
+
+
 ## Using the extension in production
 
 To minimize all dependencies and upload the extension to Contentful:
