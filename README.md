@@ -25,6 +25,18 @@ gulp watch
 
 The [same constraints](../README.md#debugging-on-your-local-environment) apply to loading unsafe scripts.
 
+## Change the Extension Name
+If you wish to change the name of the extension that will appear in Contentful, you can do so by editing the extension.json file that is located in the root. If you open the file, you will see a few options like the example below.
+
+```javascript
+{
+  "id": "summerNoteEditor",
+  "name": "Summernote WYSIWYG Editor",
+  "src": "http://localhost:3000/",
+  "fieldTypes": ["Symbol", "Text"]
+}
+```
+
 ## Change the WYSIWYG Settings
 You can change the settings of the WYSIWYG for what gets included in the toolbar. The options are available here: http://summernote.org/deep-dive/
 
