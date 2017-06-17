@@ -1,8 +1,8 @@
 {
-  "name": "json-form-editor",
+  "name": "summerNoteEditor",
   "version": "1.0.0",
   "private": true,
-  "main": "json-form-editor.js",
+  "main": "src/app.js",
   "dependencies": {
     "contentful-ui-extensions-sdk": "^2.0.0",
     "summernote": "^0.8.3"
