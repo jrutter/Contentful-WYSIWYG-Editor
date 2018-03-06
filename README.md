@@ -32,7 +32,7 @@ If you wish to change the name of the extension that will appear in Contentful, 
 {
   "id": "summerNoteEditor",
   "name": "Summernote WYSIWYG Editor",
-  "src": "http://localhost:3000/",
+  "srcdoc": "http://localhost:3000/",
   "fieldTypes": ["Symbol", "Text"]
 }
 ```
@@ -63,9 +63,19 @@ $('.summernote').summernote({
 
 ## Using the extension in production
 
-To minimize all dependencies and upload the extension to Contentful:
+To minimize all dependencies and upload the extension to Contentful for the first time:
 
 ```bash
-gulp bundle
-contentful-extension update --srcdoc ./dist/index.min.html --force --space-id <space-id>
+$ gulp bundle
+# creates `dist` directory and outputs index.min.html in there
+$ contentful-extension create --srcdoc ./dist/index.min.html --space-id <space-id>
+# uploads the extension to contentful
+```
+
+For any subsequent updates, use this command:
+```bash
+$ gulp bundle
+# *updates* `dist` directory and outputs index.min.html in there
+$ contentful-extension update --srcdoc ./dist/index.min.html --force --space-id <space-id>
+# uploads the extension in contentful
 ```
