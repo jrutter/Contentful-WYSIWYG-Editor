@@ -21,7 +21,6 @@ $(document).ready(function() {
                ['height', ['height']],
                ['code',['codeview']]
           ],
-    ],
     callbacks: {
       onInit: function() {
         console.log('Summernote is launched');
